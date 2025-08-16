@@ -14,7 +14,7 @@ import reactor.core.publisher.Mono;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = { "http://localhost:5173", "https://resume-generator-smab.onrender.com" })
 public class ResumeAPIController {
 
 	private final ResumeAIService service;
