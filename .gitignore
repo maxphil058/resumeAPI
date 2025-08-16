@@ -1,0 +1,45 @@
+# --- keep HELP.md out if you don't want it versioned ---
+HELP.md
+
+# --- Build output ---
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# --- Maven wrapper cache jar should be committed normally; remove this 
+ignore if you want to keep it in repo ---
+#.mvn/wrapper/maven-wrapper.jar
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- IDEs / Tools ---
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+
+### VS Code ###
+.vscode/
+
+# --- Logs / temp ---
+*.log
+*.tmp
+
+# --- Environment / secrets ---
+.env
+
+# --- Generated assets you don't want in git (your sample & generated 
+PDFs) ---
+src/main/resources/static/*.pdf
+
